@@ -11,7 +11,7 @@ LABEL org.opencontainers.image.title="mdd-container" \
       org.opencontainers.image.vendor="Cisco Systems" \
       org.opencontainers.image.created="${build_date}" \
       org.opencontainers.image.url="https://github.com/model-driven-devops" \
-      org.opencontainers.image.source https://github.com/model-driven-devops/mdd-container \
+      org.opencontainers.image.source="https://github.com/model-driven-devops/mdd-container" \
       org.opencontainers.image.created="${build_date}"
 
 COPY requirements.txt /tmp/requirements.txt
