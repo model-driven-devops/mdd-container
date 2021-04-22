@@ -6,11 +6,13 @@ ARG build_date=unspecified
 ARG WORKSPACE
 ENV WORKSPACE ${WORKSPACE:-/ansible}
 
-# LABEL org.opencontainers.image.title="Cisco-SDWAN" \
-#       org.opencontainers.image.description="Cisco SDWAN DevOps" \
-#       org.opencontainers.image.vendor="Cisco Systems" \
-#       org.opencontainers.image.created="${build_date}" \
-#       org.opencontainers.image.url="https://github.com/CiscoDevNet/sdwan-devops"
+LABEL org.opencontainers.image.title="mdd-container" \
+      org.opencontainers.image.description="Model-Driven-DevOps" \
+      org.opencontainers.image.vendor="Cisco Systems" \
+      org.opencontainers.image.created="${build_date}" \
+      org.opencontainers.image.url="https://github.com/model-driven-devops" \
+      org.opencontainers.image.source https://github.com/model-driven-devops/mdd-container \
+      org.opencontainers.image.created="${build_date}"
 
 COPY requirements.txt /tmp/requirements.txt
 COPY requirements.yml /tmp/requirements.yml
