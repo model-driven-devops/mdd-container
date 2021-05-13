@@ -20,7 +20,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends iputils-ping telnet openssh-client curl build-essential sshpass && \
     pip3 install --upgrade --no-cache-dir setuptools pip && \
     echo "===> Installing PIP Requirements <==="  && \
-    pip3 install --no-cache -r /tmp/requirements.txt && \
+    pip3 install --no-cache-dir -r /tmp/requirements.txt && \
     echo "===> Installing Ansible Collections <===" && \
     ansible-galaxy collection install -r /tmp/requirements.yml && \
     apt-get remove -y curl build-essential && \
